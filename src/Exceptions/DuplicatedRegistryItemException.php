@@ -8,8 +8,8 @@ class DuplicatedRegistryItemException extends RuntimeException
 {
     /**
      * Create a new duplicated registry item exception.
-     * 
-     * @param string $name
+     *
+     * @param  string  $name
      */
     public function __construct($name)
     {
@@ -21,9 +21,9 @@ class DuplicatedRegistryItemException extends RuntimeException
     /**
      * Throw a new duplicated registry item exception.
      *
-     * @param string $name
+     * @param  string  $name
      * @return never
-     * 
+     *
      * @throws static
      */
     public static function throw($name)
