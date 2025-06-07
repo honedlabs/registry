@@ -6,8 +6,5 @@ namespace Honed\Registry;
 
 class Schema
 {
-    public static function serve()
-    {
-        
-    }
+    public static function serve() {}
 }
