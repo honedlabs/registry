@@ -2,6 +2,7 @@
 
 namespace Honed\Registry\Commands;
 
+use Honed\Registry\RegistryServiceProvider;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Attribute\AsCommand;
 
