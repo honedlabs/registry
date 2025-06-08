@@ -32,6 +32,8 @@ class RegistryClearCommand extends Command
 
     /**
      * Create a new config clear command instance.
+     *
+     * @param  \Illuminate\Filesystem\Filesystem  $files
      */
     public function __construct(Filesystem $files)
     {
