@@ -8,15 +8,15 @@ trait HasRegistryType
 {
     /**
      * The type of the item. This is used to determine the type and target path of the item when resolved for a project.
-     * 
+     *
      * @var string|\Honed\Registry\Enums\RegistryType
      */
     protected $type;
 
     /**
      * Set the type of the registry item.
-     * 
-     * @param string|\Honed\Registry\Enums\RegistryType $type
+     *
+     * @param  string|\Honed\Registry\Enums\RegistryType  $type
      * @return $this
      */
     public function type($type)
@@ -28,7 +28,7 @@ trait HasRegistryType
 
     /**
      * Get the type of the registry item.
-     * 
+     *
      * @return string
      */
     public function getType()
@@ -47,7 +47,7 @@ trait HasRegistryType
 
     /**
      * Register as a block.
-     * 
+     *
      * @return $this
      */
     public function block()
@@ -57,7 +57,7 @@ trait HasRegistryType
 
     /**
      * Register as a component.
-     * 
+     *
      * @return $this
      */
     public function component()
@@ -67,7 +67,7 @@ trait HasRegistryType
 
     /**
      * Register as a composable.
-     * 
+     *
      * @return $this
      */
     public function composable()
@@ -77,7 +77,7 @@ trait HasRegistryType
 
     /**
      * Register as a lib.
-     * 
+     *
      * @return $this
      */
     public function lib()
@@ -87,7 +87,7 @@ trait HasRegistryType
 
     /**
      * Register as a hook.
-     * 
+     *
      * @return $this
      */
     public function hook()
@@ -97,7 +97,7 @@ trait HasRegistryType
 
     /**
      * Register as ui.
-     * 
+     *
      * @return $this
      */
     public function ui()
@@ -107,7 +107,7 @@ trait HasRegistryType
 
     /**
      * Register as a page.
-     * 
+     *
      * @return $this
      */
     public function page()
@@ -117,7 +117,7 @@ trait HasRegistryType
 
     /**
      * Register as a file.
-     * 
+     *
      * @return $this
      */
     public function file()
@@ -127,7 +127,7 @@ trait HasRegistryType
 
     /**
      * Register as a style.
-     * 
+     *
      * @return $this
      */
     public function style()
@@ -137,7 +137,7 @@ trait HasRegistryType
 
     /**
      * Register as a theme.
-     * 
+     *
      * @return $this
      */
     public function theme()

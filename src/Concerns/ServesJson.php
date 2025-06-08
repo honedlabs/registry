@@ -10,14 +10,14 @@ trait ServesJson
 {
     /**
      * The endpoint to serve the JSON response, will be suffixed with '.json'.
-     * 
+     *
      * @var string
      */
     protected $endpoint = 'registry';
 
     /**
      * Serve the JSON response.
-     * 
+     *
      * @return \Illuminate\Http\JsonResponse
      */
     public static function serve()

@@ -4,14 +4,13 @@ declare(strict_types=1);
 
 namespace Honed\Registry;
 
-use Illuminate\Support\Facades\App;
-use Illuminate\Support\ServiceProvider;
-use Honed\Registry\Commands\RegistryMakeCommand;
 use Honed\Registry\Commands\RegistryBuildCommand;
 use Honed\Registry\Commands\RegistryClearCommand;
 use Honed\Registry\Commands\RegistryItemMakeCommand;
+use Honed\Registry\Commands\RegistryMakeCommand;
 use Illuminate\Routing\Router;
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\ServiceProvider;
 
 class RegistryServiceProvider extends ServiceProvider
 {
