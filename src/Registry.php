@@ -13,35 +13,35 @@ class Registry implements Jsonable
 {
     /**
      * The name of the registry.
-     * 
+     *
      * @var string|null
      */
     protected $name;
 
     /**
      * The homepage of the registry.
-     * 
+     *
      * @var string|null
      */
     protected $homepage;
 
     /**
      * The author of the registry.
-     * 
+     *
      * @var string|null
      */
     protected $author;
 
     /**
      * The items of the registry.
-     * 
+     *
      * @var array<int, \Honed\Registry\RegistryItem>
      */
     protected $items;
 
     /**
      * Set the name of the registry.
-     * 
+     *
      * @return string|null
      */
     public function name()
@@ -51,7 +51,7 @@ class Registry implements Jsonable
 
     /**
      * Get the default name of the registry from the config.
-     * 
+     *
      * @return string
      */
     public function defaultName()
@@ -62,7 +62,7 @@ class Registry implements Jsonable
 
     /**
      * Get the default path of the registry json file from the config.
-     * 
+     *
      * @return string
      */
     public function defaultPath()
@@ -73,7 +73,7 @@ class Registry implements Jsonable
 
     /**
      * Get the name of the registry.
-     * 
+     *
      * @return string
      */
     public function getName()
@@ -85,7 +85,7 @@ class Registry implements Jsonable
 
     /**
      * Set the homepage of the registry.
-     * 
+     *
      * @return string|null
      */
     public function homepage()
@@ -95,7 +95,7 @@ class Registry implements Jsonable
 
     /**
      * Get the default homepage of the registry from the config.
-     * 
+     *
      * @return string
      */
     public function defaultHomepage()
@@ -106,7 +106,7 @@ class Registry implements Jsonable
 
     /**
      * Get the homepage of the registry.
-     * 
+     *
      * @return string
      */
     public function getHomepage()
@@ -118,7 +118,7 @@ class Registry implements Jsonable
 
     /**
      * Set the author of the registry.
-     * 
+     *
      * @return string|null
      */
     public function author()
@@ -128,7 +128,7 @@ class Registry implements Jsonable
 
     /**
      * Get the default author of the registry from the config.
-     * 
+     *
      * @return string|null
      */
     public function defaultAuthor()
@@ -139,7 +139,7 @@ class Registry implements Jsonable
 
     /**
      * Get the author of the registry.
-     * 
+     *
      * @return string|null
      */
     public function getAuthor()
@@ -148,7 +148,7 @@ class Registry implements Jsonable
 
         return $author ?? $this->defaultAuthor();
     }
-    
+
     /**
      * {@inheritdoc}
      */
@@ -161,14 +161,14 @@ class Registry implements Jsonable
 
     /**
      * Serve the registry as a route.
-     * 
-     * @param string|null $path
+     *
+     * @param  string|null  $path
      * @return \Illuminate\Routing\Route
      */
     public static function serve($path = null)
     {
         $registry = App::make(static::class);
-        
+
         $path ??= $registry->defaultPath();
 
         return Route::get($path, function () use ($registry) {
@@ -177,6 +177,5 @@ class Registry implements Jsonable
     }
 
     // public function toArray()
-    
-    
+
 }
