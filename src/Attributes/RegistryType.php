@@ -11,15 +11,15 @@ class RegistryType
 {
     /**
      * The type of the registry item.
-     * 
+     *
      * @var string|\Honed\Registry\Enums\RegistryType
      */
     protected $type;
 
     /**
      * Create a new registry type attribute.
-     * 
-     * @param string|\Honed\Registry\Enums\RegistryType $type
+     *
+     * @param  string|\Honed\Registry\Enums\RegistryType  $type
      */
     public function __construct($type)
     {
@@ -28,7 +28,7 @@ class RegistryType
 
     /**
      * Get the type of the registry item.
-     * 
+     *
      * @return string
      */
     public function getType()
